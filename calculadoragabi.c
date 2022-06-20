@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
 	printf("Digite o numero dois:  ");
 	scanf("%d", &n2);
 	
-	if (oper > 4)
+	if (oper > 4 || oper == 0)
 	{
 		printf("Opcao invalida");
 	}
