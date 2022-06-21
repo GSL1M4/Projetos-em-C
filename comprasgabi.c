@@ -14,10 +14,10 @@ int main(){
 		
 	
 	do{
-	printf("Digite a opÁ„o do Produto desejado:\n");
+	printf("Digite a op√ß√£o do Produto desejado:\n");
 	printf("1: Para Chocolate\n");
 	printf("2: Para Biscoito\n");
-	printf("3: Para MaÁ„\n");
+	printf("3: Para Ma√ß√£\n");
 	printf("4: Para Banana\n");
 	printf("5: Para Desodorante\n");
 	printf("6: Para Shampoo\n");
@@ -37,7 +37,7 @@ int main(){
 		break;
 		}
 	
-	printf("Quanto vocÍ tem?\n");
+	printf("Quanto voc√™ tem?\n");
 	scanf("%f", &din);
 	
 	
@@ -118,15 +118,15 @@ int main(){
 			break;
 	}
 	
-	printf("VocÍ deseja levar mais algum Produto?\n");
-	printf("1:Para SIM\n 2:Para N√O\n");
+	printf("Voc√™ deseja levar mais algum Produto?\n");
+	printf("1:Para SIM\n 2:Para N√ÉO\n");
 	scanf("%d", &perg);
 		
 	if(perg == 1){
-			printf("Digite a opÁ„o do Produto desejado:\n");
+			printf("Digite a op√ß√£o do Produto desejado:\n");
 		printf("1: Para Chocolate\n");
 		printf("2: Para Biscoito\n");
-		printf("3: Para MaÁ„\n");
+		printf("3: Para Ma√ß√£\n");
 		printf("4: Para Banana\n");
 		printf("5: Para Desodorante\n");
 		printf("6: Para Shampoo\n");
@@ -154,7 +154,7 @@ int main(){
 					prec = prec * quant;
 				}
 				reptroc = troc - prec;
-				printf("Seu troco Èh: %.2fReais\n", reptroc);	
+				printf("Seu troco √©h: %.2fReais\n", reptroc);	
 			break;	
 			case 2:
 				prec = 2.30;
@@ -162,7 +162,7 @@ int main(){
 					prec = prec * quant;
 				}
 				reptroc = troc - prec;
-				printf("Seu troco Èh: %.2fReais\n", reptroc);			
+				printf("Seu troco √©h: %.2fReais\n", reptroc);			
 			break;
 			case 3:
 				prec = 7.15;
@@ -170,7 +170,7 @@ int main(){
 					prec = prec * quant;
 				}
 				reptroc = troc - prec;
-				printf("Seu troco Èh: %.2fReais\n", reptroc);		
+				printf("Seu troco √©h: %.2fReais\n", reptroc);		
 			break;
 			case 4:
 				prec = 2.99;
@@ -178,7 +178,7 @@ int main(){
 					prec = prec * quant;
 				}
 				reptroc = troc - prec;
-				printf("Seu troco Èh: %.2fReais\n", reptroc);		
+				printf("Seu troco √©h: %.2fReais\n", reptroc);		
 			break;
 			case 5:
 				prec = 14.67;
@@ -186,7 +186,7 @@ int main(){
 					prec = prec * quant;
 				}
 				reptroc = troc - prec;
-				printf("Seu troco Èh: %.2fReais\n", reptroc);			
+				printf("Seu troco √©h: %.2fReais\n", reptroc);			
 			break;
 			case 6:
 				prec = 13.22;
@@ -194,7 +194,7 @@ int main(){
 					prec = prec * quant;
 				}
 				reptroc = troc - prec;
-				printf("Seu troco Èh: %.2fReais\n", reptroc);			
+				printf("Seu troco √©h: %.2fReais\n", reptroc);			
 			break;
 			case 7:
 				prec = 9.75;
@@ -202,7 +202,7 @@ int main(){
 					prec = prec * quant;
 				}
 				reptroc = troc - prec;
-				printf("Seu troco Èh: %.2fReais\n", reptroc);			
+				printf("Seu troco √©h: %.2fReais\n", reptroc);			
 			break;
 			case 8:
 				prec = 1.98;
@@ -210,7 +210,7 @@ int main(){
 					prec = prec * quant;
 				}
 				reptroc = troc - prec;
-				printf("Seu troco Èh: %.2fReais\n", reptroc);			
+				printf("Seu troco √©h: %.2fReais\n", reptroc);			
 			break;
 			case 9:
 				prec = 5.19;
@@ -218,7 +218,7 @@ int main(){
 					prec = prec * quant;
 				}
 				reptroc = troc - prec;
-				printf("Seu troco Èh: %.2fReais\n", reptroc);			
+				printf("Seu troco √©h: %.2fReais\n", reptroc);			
 			break;
 			case 10:
 				prec = 21.85;
@@ -226,14 +226,14 @@ int main(){
 					prec = prec * quant;
 				}
 				reptroc = troc - prec;
-				printf("Seu troco Èh: %.2fReais\n", reptroc);
+				printf("Seu troco √©h: %.2fReais\n", reptroc);
 			break;
 	}
 	} else if(perg == 2) {
-		printf("Seu troco È de %.2fReais.\n", troc);
-		printf("Muito Obrigado pela PreferÍncia!");
+		printf("Seu troco √© de %.2fReais.\n", troc);
+		printf("Muito Obrigado pela Prefer√™ncia!");
 	} else if (perg == 0 || perg > 2){
-		printf("OpÁ„o Inv·lida\n");
+		printf("Op√ß√£o Inv√°lida\n");
 	}
 
 	
