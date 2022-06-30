@@ -1,242 +1,133 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-
-
+#include <string.h>
 
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	
-	float din, troc, prec, reptroc;
-	int prod, quant, perg;
-	
-		
-	
-	do{
-	printf("Digite a opção do Produto desejado:\n");
-	printf("1: Para Chocolate\n");
-	printf("2: Para Biscoito\n");
-	printf("3: Para Maçã\n");
-	printf("4: Para Banana\n");
-	printf("5: Para Desodorante\n");
-	printf("6: Para Shampoo\n");
-	printf("7: Para Hidratante\n");
-	printf("8: Para Sabonete\n");
-	printf("9: Para Leite\n");
-	printf("10: Para Carne\n");
-	printf("0: SAIR\n");
-	
-	if(prod == 0){
-		
-	}
-	
-	printf("Digite agora:\n");
-	scanf("%d", &prod);
-		if(prod == 0){
-		break;
-		}
+	int prod, mais, quant;
+	float din, prec, calc, total;
 	
 	printf("Quanto você tem?\n");
 	scanf("%f", &din);
+	fflush(stdin);
 	
 	
-	
-	printf("Quantos Produtos quer levar?\n");
-	scanf("%d", &quant);
-	switch (prod){
-
-			case 1:
-				prec = 4.89;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				troc = din - prec;		
-			break;	
-			case 2:
-				prec = 2.30;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				troc = din - prec;			
-			break;
-			case 3:
-				prec = 7.15;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				troc = din - prec;			
-			break;
-			case 4:
-				prec = 2.99;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				troc = din - prec;			
-			break;
-			case 5:
-				prec = 14.67;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				troc = din - prec;			
-			break;
-			case 6:
-				prec = 13.22;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				troc = din - prec;			
-			break;
-			case 7:
-				prec = 9.75;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				troc = din - prec;			
-			break;
-			case 8:
-				prec = 1.98;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				troc = din - prec;			
-			break;
-			case 9:
-				prec = 5.19;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				troc = din - prec;			
-			break;
-			case 10:
-				prec = 21.85;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				troc = din - prec;
-			break;
-	}
-	
-	printf("Você deseja levar mais algum Produto?\n");
-	printf("1:Para SIM\n 2:Para NÃO\n");
-	scanf("%d", &perg);
-		
-	if(perg == 1){
-			printf("Digite a opção do Produto desejado:\n");
-		printf("1: Para Chocolate\n");
-		printf("2: Para Biscoito\n");
-		printf("3: Para Maçã\n");
-		printf("4: Para Banana\n");
-		printf("5: Para Desodorante\n");
-		printf("6: Para Shampoo\n");
-		printf("7: Para Hidratante\n");
-		printf("8: Para Sabonete\n");
-		printf("9: Para Leite\n");
-		printf("10: Para Carne\n");
+		printf("Digite a opção desejada:\n");
+		printf("1: Shampoo\n");
+		printf("2: Hidratante\n");
+		printf("3: Sabonete\n");
+		printf("4: Desodorante\n");
+		printf("5: Tintura\n");
+		printf("6: Amaciante\n");
+		printf("7: Bom AR\n");
+   	 	printf("9: Digitar Novamente\n");
 		printf("0: SAIR\n");
-	
-		printf("Digite agora:\n");
 		scanf("%d", &prod);
+		fflush(stdin);
 		
 		if(prod == 0){
-			break;
-		}
+			exit(-1);
+		} else if(prod == 9){
+      			return main();
+   		}
 		
-		printf("Quantos Produtos quer levar?\n");
+		printf("Qual a quantidade?\n");
 		scanf("%d", &quant);
+    		fflush(stdin);
+		
+		if(prod == 1){
+				prec = 14.79;
+				if(quant > 1){
+					prec = quant * prec;
+          			calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}else{
+					calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}
+				}
+			else if(prod == 2){
+					prec = 7.45;
+				if(quant > 1){
+					prec = quant * prec;
+          			calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}else{
+					calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}
+				}
+			else if(prod == 3){
+					prec = 2.54;
+				if(quant > 1){
+					prec = quant * prec;
+          			calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}else{
+					calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}
+				}
+			else if(prod == 4){
+					prec = 17.25;
+					if(quant > 1){
+					prec = quant * prec;
+          			calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}else{
+					calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}
+				}
+			else if(prod == 5){
+					prec = 23.50;
+				if(quant > 1){
+					prec = quant * prec;
+          			calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}else{
+					calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}
+				}
+			else if(prod == 6){
+					prec = 13.90;
+				if(quant > 1){
+					prec = quant * prec;
+          			calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}else{
+					calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}
+				}
+			else if(prod == 7){
+					prec = 16.35;
+				if(quant > 1){
+					prec = quant * prec;
+          			calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}else{
+					calc = din - prec;
+					printf("O seu troco é: %.2f Reais.\n", calc);
+				}
+				}
 	
-	
-		switch (prod){
-			case 1:
-				prec = 4.89;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				reptroc = troc - prec;
-				printf("Seu troco éh: %.2fReais\n", reptroc);	
-			break;	
-			case 2:
-				prec = 2.30;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				reptroc = troc - prec;
-				printf("Seu troco éh: %.2fReais\n", reptroc);			
-			break;
-			case 3:
-				prec = 7.15;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				reptroc = troc - prec;
-				printf("Seu troco éh: %.2fReais\n", reptroc);		
-			break;
-			case 4:
-				prec = 2.99;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				reptroc = troc - prec;
-				printf("Seu troco éh: %.2fReais\n", reptroc);		
-			break;
-			case 5:
-				prec = 14.67;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				reptroc = troc - prec;
-				printf("Seu troco éh: %.2fReais\n", reptroc);			
-			break;
-			case 6:
-				prec = 13.22;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				reptroc = troc - prec;
-				printf("Seu troco éh: %.2fReais\n", reptroc);			
-			break;
-			case 7:
-				prec = 9.75;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				reptroc = troc - prec;
-				printf("Seu troco éh: %.2fReais\n", reptroc);			
-			break;
-			case 8:
-				prec = 1.98;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				reptroc = troc - prec;
-				printf("Seu troco éh: %.2fReais\n", reptroc);			
-			break;
-			case 9:
-				prec = 5.19;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				reptroc = troc - prec;
-				printf("Seu troco éh: %.2fReais\n", reptroc);			
-			break;
-			case 10:
-				prec = 21.85;
-				if(quant > 1 ){
-					prec = prec * quant;
-				}
-				reptroc = troc - prec;
-				printf("Seu troco éh: %.2fReais\n", reptroc);
-			break;
-	}
-	} else if(perg == 2) {
-		printf("Seu troco é de %.2fReais.\n", troc);
-		printf("Muito Obrigado pela Preferência!");
-	} else if (perg == 0 || perg > 2){
-		printf("Opção Inválida\n");
-	}
-
-	
-
-}while(perg == 1);
+			printf("Deseja Levar mais algum produto?:\n");
+			printf("1: SIM\n");
+			printf("2: NÃO\n");
+			scanf("%d", &mais);
+			fflush(stdin);
+		
+			if(mais == 1){
+				return main();
+			} else if(mais == 2){
+			 	printf("Obrigado pela preferencia!\n");
+			} else if(mais != 1 && mais !=2){
+				exit(-1);
+			}
+			
 }
