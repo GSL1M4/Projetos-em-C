@@ -10,8 +10,8 @@ int main(){
 	float deposito, saque, saldo= 375.50;
 	int opc;
 	
-	printf("TransaÁ„o Banc·ria\n");
-	printf("Digite a opÁ„o Desejada:\n");
+	printf("Transa√ß√£o Banc√°ria\n");
+	printf("Digite a op√ß√£o Desejada:\n");
 	printf("1:Deposito\n");
 	printf("2:Saque\n");
 	printf("3:Ver o Saldo total\n");
@@ -28,7 +28,7 @@ int main(){
 			
 			saldo += deposito;
 			printf("O valor de %.2f Reais foi depositado em sua conta\n", deposito);
-			printf("Seu novo saldo È de %.2f reais\n", saldo);
+			printf("Seu novo saldo √© de %.2f reais\n", saldo);
 			break;
 			
 		case 2:
@@ -41,16 +41,16 @@ int main(){
 				}else{
 					saldo -= saque;
 					printf("O valor de %.2f Reais foi sacado de sua conta\n", saque);
-					printf("Seu novo saldo È de %.2f reais\n", saldo);
+					printf("Seu novo saldo √© de %.2f reais\n", saldo);
 				}
 				
 			break;
 			
 		case 3:
-			printf("Seu saldo È de %.2f Reais\n", saldo);
+			printf("Seu saldo √© de %.2f Reais\n", saldo);
 			break;
 		
-		default: ("OpÁ„o Inv·lida");
+		default: ("Op√ß√£o Inv√°lida");
 	}
 	
 	
